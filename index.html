@@ -87,7 +87,14 @@
     .card {
       background: var(--card);
       border-radius: 16px;
-      padding: 16px;
+      padding: 0px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+      .cardinicio{
+      background: var(--card);
+      border-radius: 16px;
+      padding: 0px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.06);
       border: 1px solid var(--border);
     }
@@ -319,6 +326,13 @@
       font-size: 12px;
       color: #666666;
     }
+
+    #inicio {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+
   </style>
 </head>
 <body>
@@ -329,9 +343,8 @@
       <h1>MoveOn</h1>
       <h2>Transforme seus treinos em progresso visível</h2>
       <p>Registre o que você já faz de atividade física e veja tudo virar XP, níveis e conquistas.</p>
-      <div class="card" style="margin-top:24px; text-align:center;">
-        <p>Ilustração exemplo</p>
-        <p class="small">Aqui poderia entrar uma imagem de pessoas se exercitando.</p>
+      <div class="cardinicio" style="margin-top:24px; text-align:center;">
+        <img id="inicio" src="pessoas.jpg" alt="">
       </div>
       <button class="btn btn-primary" onclick="goTo('screen-onb2')">Continuar</button>
     </section>
